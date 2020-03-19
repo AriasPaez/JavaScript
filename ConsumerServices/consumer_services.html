@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="my_style.css">
+    <title>Consume_Services</title>
+</head>
+<body>
+    <!-- my-5 its a margin -->
+    <div class="container my-5 text-center">
+        <div class="my-5 text-center border border-success">
+
+                <p class="my-3">The following shows dollar data obtained from <a href="https://mindicador.cl/dolar">https://mindicador.cl/dolar</a> </p>
+                <button class="btn btn-success w-50 my-3 " onclick="consume_api_mi_indicador()">Get Data from Incators</button>
+                <div class="mt-5 my-3 mx-5" id="content_api_miindicador">
+                    <p>You have not loaded data, please click on the button</p>
+                </div>
+        </div>
+        <div class="my-5 text-center border border-danger">
+                <p class="my-3">Below are randomly generated random users from <a href="https://randomuser.me/">https://randomuser.me/</a> </p>
+                <button class="btn btn-danger w-50 my-3" onclick="consume_api_random_user()">Get Random User</button>
+                
+                <div class="mt-5 my-3" id="content_api_random_user">
+                        <img src="" width="100px" class="img-fluid rounded-circle" alt="Image not loaded, yet">
+        
+                </div>
+        </div>
+        <div class="my-5 text-center border border-info">
+            <form class="my-5 mx-5" id="id_form_login"> 
+                <input type="text" name="user" placeholder="Digit user" class="form-control  my-3">
+                <input type="password" name="pass" placeholder="Digit password" class="form-control  my-3">
+                <button class="btn btn-primary my-3" type="submit"> Send </button>
+            </form>
+            <div class="my-5 mx-5" id="request_form">
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="consumer_services_fetch.js"></script>
+    <script src="method_post_fetch.js"></script>
+</body>
+</html>

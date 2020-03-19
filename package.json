@@ -1,0 +1,9 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "description": "My practices on JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/AriasPaez/JavaScript",
+  "author": "Cristian Arias <arias.sist07@gmail.com>",
+  "license": "MIT"
+}
